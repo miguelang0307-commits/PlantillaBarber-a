@@ -1,0 +1,196 @@
+/* Variables de color estilo elegante/barbería */
+:root {
+    --gold: #d4af37;
+    --gold-hover: #b89628;
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --text-light: #e0e0e0;
+    --text-muted: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+/* Botones */
+.btn-gold {
+    background-color: var(--gold);
+    color: #000 !important;
+    padding: 0.6rem 1.4rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 6rem 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    border-bottom: 2px solid var(--gold);
+}
+
+.tagline {
+    color: var(--gold);
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin: 0.8rem 0;
+}
+
+.hero p {
+    color: var(--text-muted);
+    max-width: 550px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Servicios */
+.services {
+    padding: 4rem 8%;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: var(--gold);
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.price-card {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 6px;
+    border: 1px solid #2a2a2a;
+    transition: border 0.3s;
+}
+
+.price-card:hover {
+    border-color: var(--gold);
+}
+
+.price-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.price-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+/* Sección de Horarios/Reserva */
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 3rem 8%;
+    background-color: #080808;
+}
+
+.info-box {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+.info-box h3 {
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.info-box p {
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #000;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
